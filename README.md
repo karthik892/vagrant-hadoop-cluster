@@ -18,6 +18,16 @@ This project contains scripts that will do the following:
 - Install and configure Hadoop
 - Install and configure additional big data tools built on Hadoop such as Spark, Hive and HBase
 
-## Installation Instructions
-TBA
+## Prerequisites
+You will need the following applications to use set up the virtual cluster:
+- Vagrant (tested with version 2.3.6)
+- VirtualBox (tested with version 7.0.8)
+## Configuration
+Before starting the vagrant script, please open ```Vagrantfile``` to verify that the number of VM's and the amount of RAM are not too high since this may cause the startup to fail
+
+## Startup Instructions
+Open a terminal window in the root directory of this project and run:
+```
+vagrant up
+```
 
