@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source "/vagrant/scripts/common.sh"
 TOTAL_NODES=2
 
 while getopts t: option
