@@ -1,1 +1,3 @@
 .vagrant/
+resources/ssh/id_rsa
+resources/ssh/id_rsa.pub
