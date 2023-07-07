@@ -25,6 +25,7 @@ Vagrant.configure("2") do |config|
             end
 
             node.vm.provision :shell, :path => "scripts/setup-hosts.sh", :args => "-t #{numNodes}"
+            node.vm.provision :shell, :path => "scripts/setup-ssh.sh"  , :args => "-s 3 -t #{numNodes}"
         end
     end    
 end
