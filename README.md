@@ -22,10 +22,20 @@ This project contains scripts that will do the following:
 You will need the following applications to use set up the virtual cluster:
 - Vagrant (tested with version 2.3.6)
 - VirtualBox (tested with version 7.0.8)
-## Configuration
-Before starting the vagrant script, please open ```Vagrantfile``` to verify that the number of VM's and the amount of RAM are not too high since this may cause the startup to fail
+## Installation Instructions
+### STEP 1: Configure the number of nodes
+Open ```Vagrantfile``` and change the number of nodes in line 7, you must have a minumum of 2 nodes (one namenode and one datanode)
 
-## Startup Instructions
+### STEP 2: Create SSH keys
+For nodes in a hadoop cluster to communicate with each other, they must all have the same SSH keys installed. Before these keys can be installed, we need to generate them on our host machine.
+
+Go to the root directiory of the project (the folder with this readme) and run the following command
+```
+ssh-keygen -f "resources/ssh/id_rsa"
+```
+NOTE: do not use a passphrase
+
+### STEP 3: Start vagrant
 Open a terminal window in the root directory of this project and run:
 ```
 vagrant up
