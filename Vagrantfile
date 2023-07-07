@@ -11,6 +11,7 @@ Vagrant.configure("2") do |config|
             node.vm.box = "ubuntu/trusty64" # We are using Ubuntu 14.04, code named trusty64
             node.vm.provider "virtualbox" do |vb| #VM settings for each node, we are creating a VM with 2 CPU cores and 8 GB of RAM
                 vb.name = "node#{i}"
+                vb.customize ["modifyvm", :id, "--groups", "/hadoop-cluster"]
                 vb.memory = 8192
                 vb.cpus = 2
             end
