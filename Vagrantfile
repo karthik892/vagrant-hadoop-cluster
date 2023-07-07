@@ -23,6 +23,8 @@ Vagrant.configure("2") do |config|
             else
                 node.vm.network :private_network, ip: "10.211.55.1#{i}" #, virtualbox__intnet: "vhdoop"
             end
+
+            node.vm.provision :shell, :path => "scripts/setup-hosts.sh", :args => "-t #{numNodes}"
         end
     end    
 end
