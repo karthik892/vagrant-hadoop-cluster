@@ -35,7 +35,11 @@ ssh-keygen -f "resources/ssh/id_rsa"
 ```
 NOTE: do not use a passphrase
 
-### STEP 3: Start vagrant
+### STEP 3: Download Software
+We need to download all the archives that will have to be installed in our nodes.
+In future, I will integrate this into the Vagrantfile. For now, you will need to run ```download-software.bat``` on a windows machine
+
+### STEP 4: Start vagrant
 Open a terminal window in the root directory of this project and run:
 ```
 vagrant up
