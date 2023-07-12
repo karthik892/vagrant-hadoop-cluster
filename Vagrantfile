@@ -27,6 +27,12 @@ Vagrant.configure("2") do |config|
             node.vm.provision :shell, :path => "scripts/setup-hosts.sh", :args => "-t #{numNodes}"
             node.vm.provision :shell, :path => "scripts/setup-ssh.sh"
             node.vm.provision :shell, :path => "scripts/setup-java.sh"
+            node.vm.provision :shell, :path => "scripts/setup-hadoop.sh"
+            node.vm.provision :shell, :path => "scripts/setup-hadoop-workers.sh", :args => "-s 2 -t #{numNodes}"
+
+            if i == 1
+                node.vm.provision :shell, :path => "scripts/setup-namenode.sh", privileged: false
+            end
         end
     end    
 end
