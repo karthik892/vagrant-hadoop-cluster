@@ -60,3 +60,31 @@ Open a terminal window in the root directory of this project and run:
 vagrant up
 ```
 
+## Application-specific notes
+
+### Hadoop
+
+#### Configuration Files
+All configuration files are stores in ```$HADOOP_HOME/etc/hadoop```
+
+#### Default Web UI addresses
+
+- http://node1:9870 - Name Node
+- http://node1:8088 - Resource Manager (YARN)
+- http://node2:8042, http://node3:8042, http://node4:8042, http://node5:8042 - Node Manager
+
+Sources:
+https://kontext.tech/article/265/default-ports-used-by-hadoop-services-hdfs-mapreduce-yarn
+
+#### Log File Locations
+Hadoop log files are stored in $HADOOP_HOME/logs
+
+- hadoop-root-resourcemanager-node1.log  
+- hadoop-root-resourcemanager-node1.out  
+- hadoop-vagrant-namenode-node1.log     
+- hadoop-vagrant-namenode-node1.out     
+- hadoop-vagrant-proxyserver-node1.log  
+- hadoop-vagrant-proxyserver-node1.out
+- hadoop-vagrant-secondarynamenode-node1.log
+- hadoop-vagrant-secondarynamenode-node1.out
+- SecurityAuth-vagrant.audit           
