@@ -1,22 +1,12 @@
 #!/bin/bash
 
-function setupJava {
-	ln -s /usr/lib/jvm/java-8-openjdk-amd64 /usr/local/java
-}
+echo "JAVA: Starting"
+echo "JAVA: Copying Files"
+tar -xzf /vagrant/resources/software/openjdk-11.0.1_linux-x64_bin.tar.gz -C /usr/local       # Extract hadoop archive into node
+ln -s /usr/local/jdk-11.0.1 /usr/local/java
+update-alternatives --install /usr/bin/java java /usr/local/java/bin/java 1000
+update-alternatives --install /usr/bin/javac javac /usr/local/java/bin/javac 1000
 
-function setupEnvVars {
-	echo "creating java environment variables"
-	echo export JAVA_HOME=/usr/local/java >> /etc/profile.d/java.sh
-	echo export PATH=\${JAVA_HOME}/bin:\${PATH} >> /etc/profile.d/java.sh
-}
-
-function installJava {
-	add-apt-repository -y ppa:openjdk-r/ppa
-	apt-get update
-	apt-get install -y openjdk-8-jdk
-}
-
-echo "setup java"
-installJava
-setupJava
-setupEnvVars
+echo "creating java environment variables"
+echo export JAVA_HOME=/usr/local/java >> /etc/profile.d/java.sh
+echo export PATH=\${JAVA_HOME}/bin:\${PATH} >> /etc/profile.d/java.sh
