@@ -26,7 +26,22 @@ You will need the following applications to use set up the virtual cluster:
 ### STEP 1: Configure the number of nodes
 Open ```Vagrantfile``` and change the number of nodes in line 7, you must have a minumum of 2 nodes (one namenode and one datanode)
 
-### STEP 2: Create SSH keys
+### STEP 2: Configure hosts file
+To make it easy to access the nodes of your virtual cluster, it is recommended that you update your hosts file.
+
+In windows, this file can be found in: ```c:\Windows\System32\Drivers\etc\hosts```
+Simply add the following lines to the end of the file:
+```
+10.211.55.101 node1
+10.211.55.102 node2
+10.211.55.103 node3
+10.211.55.104 node4
+10.211.55.105 node5
+```
+You can add further to this if you have more than 5 nodes.
+Now we can open a browser and type ```http://node1:9870``` instead of ```http://10.211.55.101:9870``` to access the NameNode
+
+### STEP 3: Create SSH keys
 For nodes in a hadoop cluster to communicate with each other, they must all have the same SSH keys installed. Before these keys can be installed, we need to generate them on our host machine.
 
 Go to the root directiory of the project (the folder with this readme) and run the following command
@@ -35,11 +50,11 @@ ssh-keygen -f "resources/ssh/id_rsa"
 ```
 NOTE: do not use a passphrase
 
-### STEP 3: Download Software
+### STEP 4: Download Software
 We need to download all the archives that will have to be installed in our nodes.
 In future, I will integrate this into the Vagrantfile. For now, you will need to run ```download-software.bat``` on a windows machine
 
-### STEP 4: Start vagrant
+### STEP 5: Start vagrant
 Open a terminal window in the root directory of this project and run:
 ```
 vagrant up
