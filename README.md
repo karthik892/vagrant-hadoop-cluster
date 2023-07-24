@@ -88,3 +88,15 @@ Hadoop log files are stored in $HADOOP_HOME/logs
 - hadoop-vagrant-secondarynamenode-node1.log
 - hadoop-vagrant-secondarynamenode-node1.out
 - SecurityAuth-vagrant.audit           
+
+### Spark
+
+#### Configuration Files
+All configuration files are stores in ```$SPARK_HOME/etc/hadoop```
+
+#### Default Web UI Addresses
+
+- http://node1:4040/ - Spark Jobs
+- http://node1:8080/ - Spark Master
+- http://node1:8081/ - Spark Worker
+
