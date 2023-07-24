@@ -32,6 +32,7 @@ Vagrant.configure("2") do |config|
 
             if i == 1
                 node.vm.provision :shell, :path => "scripts/setup-namenode.sh", privileged: false
+                node.vm.provision :shell, :path => "scripts/setup-spark.sh"
             end
         end
     end    

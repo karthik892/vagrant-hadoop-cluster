@@ -2,3 +2,4 @@
 resources/ssh/id_rsa
 resources/ssh/id_rsa.pub
 resources/software/*.tar.gz
+resources/software/*.tgz
