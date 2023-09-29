@@ -14,3 +14,6 @@ $HADOOP_HOME/sbin/start-all.sh
 
 echo "NAMENODE SETUP: Starting spark"
 $SPARK_HOME/sbin/start-all.sh
+
+echo "NAMENODE THRIFT: Starting spark"
+start-thriftserver.sh --hiveconf hive.server2.thrift.port=10000
