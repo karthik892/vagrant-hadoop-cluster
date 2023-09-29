@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
     r = numNodes..1
     (r.first).downto(r.last).each do |i|
         config.vm.define "node#{i}" do |node|
-            node.vm.box = "ubuntu/focal64" # We are using Ubuntu 20.04 LTS, code named Focal Fossa
+            node.vm.box = "ubuntu/trusty64" # We are using Ubuntu 14.04, code named trusty64
             node.vm.provider "virtualbox" do |vb| #VM settings for each node, we are creating a VM with 2 CPU cores and 8 GB of RAM
                 vb.name = "node#{i}"
                 vb.customize ["modifyvm", :id, "--groups", "/hadoop-cluster"]
