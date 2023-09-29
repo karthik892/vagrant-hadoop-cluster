@@ -96,7 +96,7 @@ All configuration files are stores in ```$SPARK_HOME/etc/hadoop```
 
 #### Default Web UI Addresses
 
-- http://node1:4040/ - Spark Jobs
 - http://node1:8080/ - Spark Master
 - http://node1:8081/ - Spark Worker
+- http://node1:4040/ - Spark Jobs (only available when a job is in progress)
 
