@@ -17,3 +17,6 @@ $SPARK_HOME/sbin/start-all.sh
 
 echo "NAMENODE THRIFT: Starting spark"
 start-thriftserver.sh --hiveconf hive.server2.thrift.port=10000
+
+mkdir /tmp/spark-events
+$SPARK_HOME/sbin/start-history-server.sh
