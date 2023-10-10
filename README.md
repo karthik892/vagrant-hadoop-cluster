@@ -92,7 +92,7 @@ Hadoop log files are stored in $HADOOP_HOME/logs
 ### Spark
 
 #### Configuration Files
-All configuration files are stores in ```$SPARK_HOME/etc/hadoop```
+All configuration files are stores in ```$SPARK_HOME/conf```
 
 #### Default Web UI Addresses
 
