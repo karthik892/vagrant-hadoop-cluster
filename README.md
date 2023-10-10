@@ -100,3 +100,12 @@ All configuration files are stores in ```$SPARK_HOME/conf```
 - http://node1:8081/ - Spark Worker
 - http://node1:4040/ - Spark Jobs (only available when a job is in progress)
 
+#### Log file locations
+
+Spark log files are stored in ```$SPARK_HOME/logs```
+
+- spark-vagrant-org.apache.spark.deploy.history.HistoryServer-1-node1.out
+- spark-vagrant-org.apache.spark.deploy.master.Master-1-node1.out
+- spark-vagrant-org.apache.spark.deploy.worker.Worker-1-node1.out
+- spark-vagrant-org.apache.spark.sql.hive.thriftserver.HiveThriftServer2-1-node1.out
+
