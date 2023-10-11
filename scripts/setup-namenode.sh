@@ -25,3 +25,6 @@ start-thriftserver.sh --hiveconf hive.server2.thrift.port=10000
 
 echo "NAMENODE HBASE: Starting HBase"
 $HBASE_HOME/bin/start-hbase.sh
+
+echo "Dumping startup logs"
+/vagrant/bin/dumplogs.sh
