@@ -35,6 +35,8 @@ Vagrant.configure("2") do |config|
                 node.vm.provision :shell, :path => "scripts/setup-hive.sh"
                 node.vm.provision :shell, :path => "scripts/setup-mysql.sh"
                 node.vm.provision :shell, :path => "scripts/setup-sedona.sh"
+                node.vm.provision :shell, :path => "scripts/setup-zookeeper.sh"
+                node.vm.provision :shell, :path => "scripts/setup-hbase.sh"
                 node.vm.provision :shell, :path => "scripts/setup-namenode.sh", privileged: false
             end
         end
