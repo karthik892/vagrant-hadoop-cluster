@@ -5,3 +5,4 @@ resources/software/*.tar.gz
 resources/software/*.tgz
 data/*
 env/
+resources/hive/mysql/*.jar
