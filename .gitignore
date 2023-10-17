@@ -7,3 +7,4 @@ data/*
 env/
 resources/hive/mysql/*.jar
 tasks/*.sh
+logs/*/

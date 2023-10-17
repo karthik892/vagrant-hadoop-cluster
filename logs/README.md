@@ -1,0 +1,1 @@
+This folder will contain log files generated after initial launch
