@@ -8,3 +8,10 @@ env/
 resources/hive/mysql/*.jar
 tasks/*.sh
 logs/*/
+resources/software/apache-sedona-*
+resources/software/*.sh
+resources/software/*.jar
+py/*.py
+localpy/*.py
+*.log
+ipynb/*
