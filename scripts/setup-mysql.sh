@@ -3,6 +3,8 @@ set -x
 echo "MYSQL: Installing via apt-get"
 echo "mysql-server-5.5 mysql-server/root_password password root" | sudo debconf-set-selections
 echo "mysql-server-5.5 mysql-server/root_password_again password root" | sudo debconf-set-selections
+apt-get update
+
 apt-get install -y mysql-server
 ## /sbin/service mysqld start
 
