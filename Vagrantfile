@@ -4,7 +4,7 @@
 
 Vagrant.configure("2") do |config|
     # How many nodes (VM's) must we create,
-    numNodes = 2
+    numNodes = 5
     r = numNodes..1
     (r.first).downto(r.last).each do |i|
         config.vm.define "node#{i}" do |node|
