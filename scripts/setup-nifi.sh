@@ -2,6 +2,7 @@
 
 echo "NIFI: Starting"
 echo "NIFI: Installing Apache NiFi"
+apt-get install unzip
 unzip /vagrant/resources/software/nifi-1.23.2-bin.zip -d /usr/local
 ln -s /usr/local/nifi-1.23.2 /usr/local/nifi                       # Create symbolic link to simplify scripting
 
