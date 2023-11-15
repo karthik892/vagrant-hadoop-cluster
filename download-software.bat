@@ -9,3 +9,5 @@ curl "https://dlcdn.apache.org/sedona/1.5.0/apache-sedona-1.5.0-bin.tar.gz" -o r
 curl "https://repo1.maven.org/maven2/org/datasyslab/geotools-wrapper/1.5.0-28.2/geotools-wrapper-1.5.0-28.2.jar" -o resources/software/geotools-wrapper-1.5.0-28.2.jar
 curl "https://dlcdn.apache.org/zookeeper/zookeeper-3.8.3/apache-zookeeper-3.8.3-bin.tar.gz" -o resources/software/apache-zookeeper-3.8.3-bin.tar.gz
 curl "https://dlcdn.apache.org/hbase/2.5.5/hbase-2.5.5-bin.tar.gz" -o resources/software/hbase-2.5.5-bin.tar.gz
+
+curl "https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh" -o resources/software/Anaconda3-2023.09-0-Linux-x86_64.sh
