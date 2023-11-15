@@ -10,5 +10,6 @@ curl "https://repo1.maven.org/maven2/org/datasyslab/geotools-wrapper/1.5.0-28.2/
 curl "https://dlcdn.apache.org/zookeeper/zookeeper-3.8.3/apache-zookeeper-3.8.3-bin.tar.gz" -o resources/software/apache-zookeeper-3.8.3-bin.tar.gz
 curl "https://dlcdn.apache.org/hbase/2.5.5/hbase-2.5.5-bin.tar.gz" -o resources/software/hbase-2.5.5-bin.tar.gz
 curl "https://dlcdn.apache.org/flume/1.11.0/apache-flume-1.11.0-bin.tar.gz" -o resources/software/apache-flume-1.11.0-bin.tar.gz
+curl "https://dlcdn.apache.org/nifi/1.23.2/nifi-1.23.2-bin.zip" -o resources/software/nifi-1.23.2-bin.zip
 
 curl "https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh" -o resources/software/Anaconda3-2023.09-0-Linux-x86_64.sh

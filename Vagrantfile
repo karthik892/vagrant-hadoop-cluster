@@ -38,6 +38,7 @@ Vagrant.configure("2") do |config|
                 node.vm.provision :shell, :path => "scripts/setup-zookeeper.sh"
                 node.vm.provision :shell, :path => "scripts/setup-hbase.sh"
                 node.vm.provision :shell, :path => "scripts/setup-flume.sh"
+                node.vm.provision :shell, :path => "scripts/setup-nifi.sh"
                 #node.vm.provision :shell, :path => "scripts/setup-conda.sh", privileged: false
                 node.vm.provision :shell, :path => "scripts/setup-namenode.sh", privileged: false
             end
