@@ -6,7 +6,7 @@ echo "CONDA: Installing Anaconda"
 
 echo "CONDA: Creating environment"
 export CONDA_HOME=~/anaconda3
-source $CONDA_HOME/bin/activate
+source $CONDA_HOME/bin/activate base
 conda create -y -q --name hadoop python=3.8.10
 conda activate hadoop
 conda install -y -q pyspark geopandas jupyter
