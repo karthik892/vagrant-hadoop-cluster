@@ -13,3 +13,5 @@ curl "https://dlcdn.apache.org/flume/1.11.0/apache-flume-1.11.0-bin.tar.gz" -o r
 curl "https://dlcdn.apache.org/nifi/1.23.2/nifi-1.23.2-bin.zip" -o resources/software/nifi-1.23.2-bin.zip
 
 curl "https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh" -o resources/software/Anaconda3-2023.09-0-Linux-x86_64.sh
+
+curl "https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar" -o resources/hive/mysql/mysql-connector-java-8.0.30.jar
