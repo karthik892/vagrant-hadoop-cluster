@@ -1,0 +1,12 @@
+[Unit]
+Description=Cassandra Cluster Node Daemon
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/cassandra/bin/cassandra -f
+ExecStopPost=/usr/bin/rm -rf /data/cassandra/saved_caches
+SuccessExitStatus=143
+
+[Install]
+WantedBy=default.target

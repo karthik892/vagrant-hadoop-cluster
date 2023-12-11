@@ -32,8 +32,8 @@
     <provider>
         <identifier>single-user-provider</identifier>
         <class>org.apache.nifi.authentication.single.user.SingleUserLoginIdentityProvider</class>
-        <property name="Username"/>
-        <property name="Password"/>
+        <property name="Username">vagrant</property>
+        <property name="Password">vagrant</property>
     </provider>
     <!--
         Identity Provider for users logging in with username/password against an LDAP server.

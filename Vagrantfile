@@ -30,6 +30,15 @@ Vagrant.configure("2") do |config|
             node.vm.provision :shell, :path => "scripts/setup-hadoop.sh"
             node.vm.provision :shell, :path => "scripts/setup-hadoop-workers.sh", :args => "-s 2 -t #{numNodes}"
 
+            if i != 1 # All the data nodes function as cassandra nodes
+                node.vm.provision :shell, :path => "scripts/setup-cassandra.sh"
+                #node.vm.provision :shell, :path => "scripts/start-cassandra.sh", privileged: false
+            end
+
+            if i == 2 # Node 2 is our cassandra master
+                #node.vm.provision :shell, :path => "scripts/start-cassandra.sh", privileged: false
+            end
+            
             if i == 1
                 node.vm.provision :shell, :path => "scripts/setup-spark.sh"
                 node.vm.provision :shell, :path => "scripts/setup-hive.sh"

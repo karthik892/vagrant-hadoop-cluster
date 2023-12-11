@@ -1,0 +1,11 @@
+[Unit]
+Description=Hadoop Daemon
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/hadoop/sbin/start-all.sh
+ExecStart=/usr/local/hadoop/sbin/stop-all.sh
+
+[Install]
+WantedBy=default.target
