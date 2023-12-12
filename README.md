@@ -89,6 +89,19 @@ Hadoop log files are stored in $HADOOP_HOME/logs
 - hadoop-vagrant-secondarynamenode-node1.out
 - SecurityAuth-vagrant.audit           
 
+### Zookeeper
+
+#### Configuration Files
+All configuration files are stores in ```/usr/local/zookeeper/conf```
+
+### Default Web UI Addresses
+
+- http://node1:8180/commands
+
+#### Log file locations
+
+Logs can be viewed with ```journalctl```
+
 ### Spark
 
 #### Configuration Files
@@ -109,3 +122,6 @@ Spark log files are stored in ```$SPARK_HOME/logs```
 - spark-vagrant-org.apache.spark.deploy.worker.Worker-1-node1.out
 - spark-vagrant-org.apache.spark.sql.hive.thriftserver.HiveThriftServer2-1-node1.out
 
+## Known Issues
+
+- Hadoop has not been properly set up to use zookeeper
