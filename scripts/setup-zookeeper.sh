@@ -17,9 +17,9 @@ echo "ZOOKEEPER: Creating working directories"
 mkdir /var/zookeeper
 mkdir /usr/local/zookeeper/logs
 mkdir /var/zookeeper/data
-echo "1" >> /usr/local/zookeeper/data/myid
 
 chown -R vagrant /var/zookeeper
 chown -R vagrant /usr/local/zookeeper/logs
+chown -R vagrant /usr/local/zookeeper/data/
 
 echo "ZOOKEEPER: Task completed successfully"
