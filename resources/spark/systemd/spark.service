@@ -1,0 +1,14 @@
+[Unit]
+Description=Spark Daemon
+Before=spark-history-server.service
+After=hadoop.service
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/spark/sbin/start-all.sh
+RemainAfterExit=yes
+ExecStop=/usr/local/spark/sbin/stop-all.sh
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Zookeeper Daemon
+Before=spark-history-server.service
+After=hadoop.service
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/zookeeper/bin/zkServer.sh start-foreground
+
+[Install]
+WantedBy=default.target

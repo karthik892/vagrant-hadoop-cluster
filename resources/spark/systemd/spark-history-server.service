@@ -1,0 +1,13 @@
+[Unit]
+Description=Spark History Daemon
+After=spark.service
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/spark/sbin/start-history-server.sh
+RemainAfterExit=yes
+ExecStop=/usr/local/spark/sbin/stop-history-server.sh
+
+[Install]
+WantedBy=default.target
