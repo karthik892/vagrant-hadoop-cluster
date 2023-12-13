@@ -46,7 +46,7 @@ Vagrant.configure("2") do |config|
                 node.vm.provision :shell, :path => "scripts/setup-spark.sh"
                 node.vm.provision :shell, :path => "scripts/setup-hive.sh"
                 node.vm.provision :shell, :path => "scripts/setup-mysql.sh"
-                node.vm.provision :shell, :path => "scripts/setup-sedona.sh"
+                #node.vm.provision :shell, :path => "scripts/setup-sedona.sh"
                 #node.vm.provision :shell, :path => "scripts/setup-hbase.sh"
                 #node.vm.provision :shell, :path => "scripts/setup-flume.sh"
                 #node.vm.provision :shell, :path => "scripts/setup-nifi.sh"
