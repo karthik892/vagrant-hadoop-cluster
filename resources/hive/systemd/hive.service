@@ -1,0 +1,11 @@
+[Unit]
+Description=Hadoop Daemon
+After=hadoop.service
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/hive/bin/hiveserver2
+
+[Install]
+WantedBy=default.target

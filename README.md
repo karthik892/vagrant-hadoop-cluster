@@ -104,6 +104,15 @@ All configuration files are stores in ```/usr/local/zookeeper/conf```
 
 Logs can be viewed with ```journalctl```
 
+### Hive
+
+#### Configuration Files
+All configuration files are stores in ```$HIVE_HOME/conf```
+
+### Default Web UI Addresses
+
+- http://node1:10002/
+
 ### Spark
 
 #### Configuration Files

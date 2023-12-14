@@ -20,3 +20,8 @@ cp /vagrant/resources/zookeeper/systemd/zookeeper.service /etc/systemd/system/zo
 systemctl enable zookeeper.service
 systemctl start zookeeper.service
 
+echo "NAMENODE SERVICES - HIVE"
+cp /vagrant/resources/hive/systemd/hive.service /etc/systemd/system/hive.service
+systemctl enable hive.service
+systemctl start hive.service
+
