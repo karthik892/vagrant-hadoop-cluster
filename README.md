@@ -8,6 +8,8 @@ Here are a few alternative solutions that I have considered (they might work for
 
 This project is based on a number of projects on GitHub that do similar things, such as:
 - https://github.com/ssalat/vagrant-hadoop-cluster
+- https://github.com/martinprobson/vagrant-hadoop-hive-spark
+
 
 Unfortunately, these projects are all very old and require quite a bit of work to get them to work with the latest versions of Hadoop.
 
