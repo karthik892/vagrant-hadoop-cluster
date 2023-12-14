@@ -1,6 +1,7 @@
 
 curl "https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6-aarch64.tar.gz" -o resources/software/hadoop-3.3.6-aarch64.tar.gz
 curl "https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz" -o resources/software/openjdk-11.0.1_linux-x64_bin.tar.gz
+curl "https://download.oracle.com/otn/java/jdk/8u381-b09/8c876547113c4e4aab3c868e9e0ec572/jdk-8u381-linux-x64.tar.gz" -o resources/software/jdk-8u381-linux-x64.tar.gz
 curl "https://dlcdn.apache.org/spark/spark-3.4.1/spark-3.4.1-bin-hadoop3.tgz" -o resources/software/spark-3.4.1-bin-hadoop3.tgz
 curl "https://dlcdn.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz" -o resources/software/spark-3.5.0-bin-hadoop3.tgz
 curl "https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz" -o resources/software/apache-hive-3.1.3-bin.tar.gz

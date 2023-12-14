@@ -127,3 +127,4 @@ Spark log files are stored in ```$SPARK_HOME/logs```
 ## Known Issues
 
 - Hadoop has not been properly set up to use zookeeper
+- Apache Hive is not compatible with Java 11 - https://github.com/exasol/hadoop-etl-udfs/issues/59
