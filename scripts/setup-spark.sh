@@ -18,6 +18,9 @@ cp -f /vagrant/resources/spark/config/* /usr/local/spark/conf
 
 echo "SPARK: Creating working directories"
 mkdir /usr/local/spark/logs
+mkdir /tmp/spark-events
+
 chown vagrant /usr/local/spark/logs
+chown vagrant /tmp/spark-events
 
 echo "SPARK: Task Completed Successfully"
