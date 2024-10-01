@@ -24,4 +24,3 @@ echo "NAMENODE SERVICES - HIVE"
 cp /vagrant/resources/hive/systemd/hive.service /etc/systemd/system/hive.service
 systemctl enable hive.service
 systemctl start hive.service
-
