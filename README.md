@@ -133,6 +133,23 @@ Spark log files are stored in ```$SPARK_HOME/logs```
 - spark-vagrant-org.apache.spark.deploy.worker.Worker-1-node1.out
 - spark-vagrant-org.apache.spark.sql.hive.thriftserver.HiveThriftServer2-1-node1.out
 
+## Verifying that everything is running
+### JPS
+
+The easiest way to verify that things are working correctly is with JPS, simply run the command ```jps -mlV```.
+
+On the name node you should see the following:
+- org.apache.hadoop.hdfs.server.namenode.NameNode - Hadoop Namenode
+- org.apache.hadoop.yarn.server.resourcemanager.ResourceManager - Hadoop Resource Manager
+- org.apache.zookeeper.server.quorum.QuorumPeerMain - Zookeeper
+- org.apache.spark.deploy.worker.Worker - Spark Worker
+- org.apache.spark.deploy.history.HistoryServer - Spark History Server
+
+On data nodes, you should see the following:
+- org.apache.hadoop.hdfs.server.datanode.DataNode - Hadoop Datanode
+- org.apache.hadoop.yarn.server.nodemanager.NodeManager - Hadoop Node Manager
+- org.apache.zookeeper.server.quorum.QuorumPeerMain - Zookeeper
+
 ## Known Issues
 
 - Hadoop has not been properly set up to use zookeeper

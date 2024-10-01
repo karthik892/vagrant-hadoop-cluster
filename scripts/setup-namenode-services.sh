@@ -15,10 +15,10 @@ cp /vagrant/resources/spark/systemd/spark-history-server.service /etc/systemd/sy
 systemctl enable spark-history-server.service
 systemctl start spark-history-server.service
 
-echo "NAMENODE SERVICES - ZOOKEEPER"
-cp /vagrant/resources/zookeeper/systemd/zookeeper.service /etc/systemd/system/zookeeper.service
-systemctl enable zookeeper.service
-systemctl start zookeeper.service
+#REM echo "NAMENODE SERVICES - ZOOKEEPER"
+#REM cp /vagrant/resources/zookeeper/systemd/zookeeper.service /etc/systemd/system/zookeeper.service
+#REM systemctl enable zookeeper.service
+#REM systemctl start zookeeper.service
 
 echo "NAMENODE SERVICES - HIVE"
 cp /vagrant/resources/hive/systemd/hive.service /etc/systemd/system/hive.service
