@@ -16,7 +16,7 @@ echo export HADOOP_MAPRED_IDENT_STRING=root >> /etc/profile.d/hadoop.sh
 echo export PATH=\${HADOOP_HOME}/bin:\${PATH} >> /etc/profile.d/hadoop.sh
 
 echo "HADOOP: Copying configuration files"
-cp -f /vagrant/resources/hadoop/config/* /usr/local/hadoop/etc/hadoop
+cp -rf /vagrant/resources/hadoop/config/* /usr/local/hadoop/etc/hadoop
 
 echo "HADOOP: Creating working directories"
 mkdir /etc/hadoop
