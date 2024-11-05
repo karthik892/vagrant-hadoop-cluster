@@ -20,6 +20,6 @@ mkdir /var/zookeeper/data
 
 chown -R vagrant /var/zookeeper
 chown -R vagrant /usr/local/zookeeper/logs
-chown -R vagrant /usr/local/zookeeper/data/
+chown -R vagrant /var/zookeeper/data
 
 echo "ZOOKEEPER: Task completed successfully"

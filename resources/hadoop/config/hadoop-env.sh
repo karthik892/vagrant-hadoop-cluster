@@ -354,6 +354,7 @@ export HADOOP_OS_TYPE=${HADOOP_OS_TYPE:-$(uname -s)}
 # and therefore may override any similar flags set in HADOOP_OPTS
 #
 # export HDFS_ZKFC_OPTS=""
+export HADOOP_ZKFC_HOME=/usr/local/zookeeper
 
 ###
 # QuorumJournalNode specific parameters
