@@ -29,7 +29,6 @@ Vagrant.configure("2") do |config|
             node.vm.provision :shell, :path => "scripts/setup-java.sh"
             node.vm.provision :shell, :path => "scripts/setup-hadoop.sh"
             node.vm.provision :shell, :path => "scripts/setup-hadoop-workers.sh", :args => "-s 2 -t #{numNodes}"
-            #node.vm.provision :shell, :path => "scripts/setup-zookeeper.sh"
             #node.vm.provision :shell, :path => "scripts/setup-zookeeper-id.sh", :args => "-s #{i}"
             #node.vm.provision :shell, :path => "scripts/setup-hbase.sh"
 
@@ -44,8 +43,10 @@ Vagrant.configure("2") do |config|
             end
             
             if i == 1
+                node.vm.provision :shell, :path => "scripts/setup-zookeeper.sh"
+                node.vm.provision :shell, :path => "scripts/setup-storm.sh"
                 node.vm.provision :shell, :path => "scripts/setup-spark.sh"
-                node.vm.provision :shell, :path => "scripts/setup-hive.sh"
+                #node.vm.provision :shell, :path => "scripts/setup-hive.sh"
                 #node.vm.provision :shell, :path => "scripts/setup-mysql.sh"
                 #node.vm.provision :shell, :path => "scripts/setup-flume.sh"
                 #node.vm.provision :shell, :path => "scripts/setup-nifi.sh"

@@ -1,0 +1,12 @@
+[Unit]
+Description=Apache Storm supervisor
+After=hadoop.service
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/storm/bin/storm supervisor
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

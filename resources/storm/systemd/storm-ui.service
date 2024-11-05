@@ -1,0 +1,12 @@
+[Unit]
+Description=Apache Storm ui
+After=hadoop.service
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/storm/bin/storm ui
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

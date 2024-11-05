@@ -15,6 +15,11 @@ mkdir /vagrant/logs/zk
 cp $ZK_HOME/logs/* /vagrant/logs/zk
 journalctl -u zookeeper.service >> /vagrant/logs/zk/systemd.log
 
+mkdir /vagrant/logs/storm
+cp $STORM_HOME/logs/* /vagrant/logs/storm
+journalctl -u storm-nimbus.service >> /vagrant/logs/storm/systemd-storm-numbus.log
+journalctl -u storm-supervisor.service >> /vagrant/logs/storm/systemd-storm-supervisor.log
+journalctl -u storm-ui.service >> /vagrant/logs/storm/systemd-storm-ui.log
 #mkdir /vagrant/logs/hive
 #journalctl -u hive.service >> /vagrant/logs/hive/systemd.log
 

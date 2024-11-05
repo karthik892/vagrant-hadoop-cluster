@@ -20,9 +20,27 @@ cp /vagrant/resources/spark/systemd/spark-history-server.service /etc/systemd/sy
 systemctl enable spark-history-server.service
 systemctl start spark-history-server.service
 
+echo "NAMENODE SERVICES - STORM-NIMBUS"
+cp /vagrant/resources/storm/systemd/storm-nimbus.service /etc/systemd/system/storm-nimbus.service
+systemctl enable storm-nimbus.service
+systemctl start storm-nimbus.service
+
+echo "NAMENODE SERVICES - STORM-SUPERVISOR"
+cp /vagrant/resources/storm/systemd/storm-supervisor.service /etc/systemd/system/storm-supervisor.service
+systemctl enable storm-supervisor.service
+systemctl start storm-supervisor.service
+
+echo "NAMENODE SERVICES - STORM-UI"
+cp /vagrant/resources/storm/systemd/storm-ui.service /etc/systemd/system/storm-ui.service
+systemctl enable storm-ui.service
+systemctl start storm-ui.service
+
 
 
 # echo "NAMENODE SERVICES - HIVE"
 # cp /vagrant/resources/hive/systemd/hive.service /etc/systemd/system/hive.service
 # systemctl enable hive.service
 # systemctl start hive.service
+
+
+/vagrant/bin/dumplogs.sh
