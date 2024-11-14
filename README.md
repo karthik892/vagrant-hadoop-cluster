@@ -104,6 +104,39 @@ All configuration files are stores in ```/usr/local/zookeeper/conf```
 
 Logs can be viewed with ```journalctl```
 
+### Storm
+
+#### Configuration Files
+All configuration files are stores in ```/usr/local/storm/conf```
+
+#### Default Web UI Addresses
+
+- http://node1:8090/ - Storm UI
+- http://node1:8000/api/v1/daemonlog?file=nimbus.log - Log Viewer
+
+#### Log file locations
+
+Logs can be viewed with ```journalctl```
+
+Additional log files are stored in ```$STORM_HOME/logs```
+
+- access-logviewer.log
+- access-nimbus.log
+- access-supervisor.log
+- access-ui.log
+- access-web-logviewer.log
+- access-web-nimbus.log
+- access-web-supervisor.log
+- access-web-ui.log
+- logviewer.log
+- logviewer.log.metrics
+- nimbus.log
+- nimbus.log.metrics
+- supervisor.log
+- supervisor.log.metrics
+- ui.log
+- ui.log.metrics
+
 ### Hive
 
 #### Configuration Files
