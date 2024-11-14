@@ -35,6 +35,11 @@ cp /vagrant/resources/storm/systemd/storm-ui.service /etc/systemd/system/storm-u
 systemctl enable storm-ui.service
 systemctl start storm-ui.service
 
+echo "NAMENODE SERVICES - STORM-LOGVIEWER"
+cp /vagrant/resources/storm/systemd/storm-logviewer.service /etc/systemd/system/storm-logviewer.service
+systemctl enable storm-logviewer.service
+systemctl start storm-logviewer.service
+
 
 
 # echo "NAMENODE SERVICES - HIVE"

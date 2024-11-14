@@ -1,0 +1,11 @@
+[Unit]
+Description=Apache Storm LogViewer
+After=hadoop.service
+
+[Service]
+Type=simple
+User=vagrant
+ExecStart=/usr/local/storm/bin/storm logviewer
+
+[Install]
+WantedBy=default.target
