@@ -1,4 +1,5 @@
 #!/bin/bash
+timedatectl set-timezone America/New_York
 
 echo "NAMENODE SERVICES - ZOOKEEPER"
 cp /vagrant/resources/zookeeper/systemd/zookeeper.service /etc/systemd/system/zookeeper.service
