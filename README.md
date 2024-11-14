@@ -96,7 +96,7 @@ Hadoop log files are stored in $HADOOP_HOME/logs
 #### Configuration Files
 All configuration files are stores in ```/usr/local/zookeeper/conf```
 
-### Default Web UI Addresses
+#### Default Web UI Addresses
 
 - http://node1:8180/commands
 
@@ -109,7 +109,7 @@ Logs can be viewed with ```journalctl```
 #### Configuration Files
 All configuration files are stores in ```$HIVE_HOME/conf```
 
-### Default Web UI Addresses
+#### Default Web UI Addresses
 
 - http://node1:10002/
 
